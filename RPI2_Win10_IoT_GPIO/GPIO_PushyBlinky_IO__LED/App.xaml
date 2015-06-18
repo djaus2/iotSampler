@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="GPIO_PushyBlinky_IO_LED.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:GPIO_PushyBlinky_IO_LED"
+    RequestedTheme="Light">
+
+</Application>
