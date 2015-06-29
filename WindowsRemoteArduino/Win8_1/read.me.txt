@@ -1,0 +1,4 @@
+Open the solution file .\wrasm\remote-wiring\Microsoft.Maker.win8_1\wrasm.sln
+
+Reference: http://embedded101.com/Blogs/David-Jones/entryid/635/Windows-8-1-IoT-Windows-Remote-Arduino-and-Universal-apps
+

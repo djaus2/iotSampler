@@ -1,0 +1,3 @@
+Open the solution file .\wrasUWP\Microsoft.Maker.win10\wrauwp.sln  in Visual Studio 2015 (RC)
+
+Reference http://embedded101.com/Blogs/David-Jones/entryid/636/Windows-10-IoT-Windows-Remote-Arduino-and-Universal-Windows-Platform-Apps
