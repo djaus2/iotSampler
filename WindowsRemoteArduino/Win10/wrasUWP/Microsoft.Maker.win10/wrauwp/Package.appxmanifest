@@ -7,20 +7,20 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="46a93bc4-1218-4337-b120-af78b4632a93"
-    Publisher="CN=david"
+    Name="30245004-defc-44bd-a547-b97594fa74b6"
+    Publisher="CN=David Jones"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="46a93bc4-1218-4337-b120-af78b4632a93" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="30245004-defc-44bd-a547-b97594fa74b6" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>wrauwp</DisplayName>
-    <PublisherDisplayName>david</PublisherDisplayName>
+    <DisplayName>wrauwpRTM</DisplayName>
+    <PublisherDisplayName>David Jones</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
   </Dependencies>
 
   <Resources>
@@ -30,13 +30,14 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="wrauwp.App">
+      EntryPoint="wrauwpRTM.App">
       <uap:VisualElements
-        DisplayName="wrauwp"
-        Square150x150Logo="Assets\Logo.png"
-        Square44x44Logo="Assets\SmallLogo.png"
-        Description="wrauwp"
-        BackgroundColor="#464646">
+        DisplayName="wrauwpRTM"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="wrauwpRTM"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
