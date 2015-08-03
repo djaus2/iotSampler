@@ -18,6 +18,8 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
         <Button Name="ConnectButton" Click="ConnectButton_Click" Grid.Row="0" IsEnabled="True" HorizontalAlignment="Stretch" BorderBrush="Lime" Foreground="Lime" FontSize="32">Connect</Button>
         <Button Name="OffButton" Click="OffButton_Click" Grid.Row="1" IsEnabled="False" HorizontalAlignment="Stretch" Foreground="White" Background="Green" FontSize="32">Off!</Button>
@@ -27,5 +29,7 @@
         <Ellipse x:Name="PBStatusLED" Fill="#FF96969B"  Grid.Row="6"  Stroke="Black" Width="64" IsRightTapEnabled="False" IsTapEnabled="True" IsDoubleTapEnabled="False" Height="64" VerticalAlignment="Top" HorizontalAlignment="Center" />
         <ProgressRing x:Name="progress1" Grid.Row="7" Height="50" Visibility="Visible"/>
         <ProgressBar x:Name="analogBar" Value="0"  Margin="10" Maximum="255" Height="32" IsIndeterminate="False" Grid.Row="8" Foreground="Green"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="34" Margin="10,10.333,0,-44.333" Grid.Row="9" TextWrapping="Wrap" Text="PWM: LED Dimmer" VerticalAlignment="Top" Width="273"/>
+        <Slider x:Name="slider" HorizontalAlignment="Left" Height="47" Margin="0,34.333,0,-81.333" Grid.Row="10" VerticalAlignment="Center" Width="350" ValueChanged="slider_ValueChanged" Maximum="255" SmallChange="5" StepFrequency="5"/>
     </Grid>
 </Page>

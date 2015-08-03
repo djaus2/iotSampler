@@ -31,6 +31,9 @@ namespace wrauwp
         private const int LED_PIN = 5;
         private const int ANALOG_PIN = 14;
 
+        //Dimmer:
+        private const int PWM_PIN = 10;
+
         // In Poll mode timer ticks sample the inputs
         //private DispatcherTimer pbPolltimer;
 
@@ -82,6 +85,7 @@ namespace wrauwp
                 // Note: Need actual pin number, not analog ibndex:
                 arduino.pinMode(ANALOG_PIN, PinMode.ANALOG);
 
+
                 arduino.AnalogPinUpdatedEvent += Arduino_AnalogPinUpdated;
                 arduino.DigitalPinUpdatedEvent += Arduino_DigitalPinUpdated;
 
@@ -90,6 +94,9 @@ namespace wrauwp
                 //BT is connected so turn off progress ring
                 this.progress1.IsActive = false;
                 this.progress1.Visibility = Visibility.Collapsed;
+
+                //Dimmer
+                arduino.pinMode(PWM_PIN, PinMode.PWM);
 
             }));
         }
@@ -213,6 +220,16 @@ namespace wrauwp
             //this.pbPolltimer.Stop();
         }
 
+        /// <summary>
+        /// Dimmer:
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void slider_ValueChanged(object sender, RangeBaseValueChangedEventArgs e)
+        {
+            byte val = (byte) slider.Value;
+            arduino.analogWrite(PWM_PIN, val);
+        }
     }
 }
 
