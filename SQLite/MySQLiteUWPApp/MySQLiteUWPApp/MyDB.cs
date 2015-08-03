@@ -1,7 +1,7 @@
 ﻿using System;
 using SQLite;
 
-namespace MySQLiteUWPApp
+namespace MySQLiteUWPAppRTM
 {
     [Table("Sensors")]
     public class Sensor
