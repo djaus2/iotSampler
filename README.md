@@ -17,7 +17,7 @@ This is the full code for the tutorials at: Windows 10 Universal Windows Platfor
 Window 8.1 Universal App: http://t.co/WsVkqzAeq1
 
 
-Windows 10 SQLite Universal App <-- Coming
+3. Windows 10 SQLite Universal App <-- Coming
 Runs on all Windows 10 platforms, desktop, phone AND IoT 
 Visual State Manager for phone context. 
 Tutorial on Embedded101: http://embedded101.com/Blogs/David-Jones
