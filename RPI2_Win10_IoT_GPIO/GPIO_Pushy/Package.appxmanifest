@@ -7,20 +7,20 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="9013e738-7aff-43db-a450-d29821af458f"
-    Publisher="CN=david"
+    Name="c7dffa57-73fc-4e10-8e40-5a10bd01fadf"
+    Publisher="CN=David Jones"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="9013e738-7aff-43db-a450-d29821af458f" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="c7dffa57-73fc-4e10-8e40-5a10bd01fadf" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>GPIO_Pushy</DisplayName>
-    <PublisherDisplayName>david</PublisherDisplayName>
+    <DisplayName>GPIO_Pushy_RTM</DisplayName>
+    <PublisherDisplayName>David Jones</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
   </Dependencies>
 
   <Resources>
@@ -30,13 +30,14 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="Pushy.App">
+      EntryPoint="GPIO_Pushy_RTM.App">
       <uap:VisualElements
-        DisplayName="GPIO_Pushy"
-        Square150x150Logo="Assets\Logo.png"
-        Square44x44Logo="Assets\SmallLogo.png"
-        Description="GPIO_Pushy"
-        BackgroundColor="#464646">
+        DisplayName="GPIO_Pushy_RTM"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="GPIO_Pushy_RTM"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>

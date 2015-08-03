@@ -7,20 +7,20 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="70b3a614-afb6-49c2-adbc-a1a5b2f62627"
-    Publisher="CN=david"
+    Name="0b330db1-5781-4675-9bd7-86483d3bffbf"
+    Publisher="CN=David Jones"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="70b3a614-afb6-49c2-adbc-a1a5b2f62627" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="0b330db1-5781-4675-9bd7-86483d3bffbf" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>GPIO_PushyBlinky_IO_PB_Intrp</DisplayName>
-    <PublisherDisplayName>david</PublisherDisplayName>
+    <DisplayName>GPIO_PushyBlinky_IO_PB_Intrp_RTM</DisplayName>
+    <PublisherDisplayName>David Jones</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
   </Dependencies>
 
   <Resources>
@@ -30,13 +30,14 @@
   <Applications>
     <Application Id="App"
       Executable="$targetnametoken$.exe"
-      EntryPoint="PushyBlinkyIOIntrp.App">
+      EntryPoint="GPIO_PushyBlinky_IO_PB_Intrp_RTM.App">
       <uap:VisualElements
-        DisplayName="GPIO_PushyBlinky_IO_PB_Intrp"
-        Square150x150Logo="Assets\Logo.png"
-        Square44x44Logo="Assets\SmallLogo.png"
-        Description="GPIO_PushyBlinky_IO_PB_Intrp"
-        BackgroundColor="#464646">
+        DisplayName="GPIO_PushyBlinky_IO_PB_Intrp_RTM"
+        Square150x150Logo="Assets\Square150x150Logo.png"
+        Square44x44Logo="Assets\Square44x44Logo.png"
+        Description="GPIO_PushyBlinky_IO_PB_Intrp_RTM"
+        BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png"/>
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
     </Application>
