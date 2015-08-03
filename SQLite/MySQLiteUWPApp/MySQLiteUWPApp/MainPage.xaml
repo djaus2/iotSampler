@@ -1,0 +1,124 @@
+﻿<Page
+    x:Class="MySQLiteUWPApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MySQLiteUWPApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="Grid1" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" SizeChanged="Grid_SizeChanged" >
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="narrowView">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger  MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="button21.Width" Value="100"/>
+                        <Setter Target="button22.Width" Value="100"/>
+                        <Setter Target="button23.Width" Value="100"/>
+                        <Setter Target="button41.Width" Value="100"/>
+                        <Setter Target="button42.Width" Value="100"/>
+                        <Setter Target="button43.Width" Value="100"/>
+                        <Setter Target="button61.Width" Value="100"/>
+                        <Setter Target="button62.Width" Value="100"/>
+                        <Setter Target="button63.Width" Value="100"/>
+                        <Setter Target="button71.Width" Value="100"/>
+                        <Setter Target="button81.Width" Value="100"/>
+                        <Setter Target="textBoxTableName.Width" Value="100"/>                     
+                        <Setter Target="button82.Width" Value="100"/>
+                        <Setter Target="button91.Width" Value="100"/>
+                        <Setter Target="button92.Width" Value="100"/>
+                        <Setter Target="button93.Width" Value="100"/>
+                        <Setter Target="textBoxQueryBeginsWith.Width" Value="120"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="wideView">
+                    <VisualState.Setters>
+                        <Setter Target="button21.Width" Value="200"/>
+                        <Setter Target="button22.Width" Value="200"/>
+                        <Setter Target="button23.Width" Value="200"/>
+                        <Setter Target="button41.Width" Value="200"/>
+                        <Setter Target="button42.Width" Value="200"/>
+                        <Setter Target="button43.Width" Value="200"/>
+                        <Setter Target="button61.Width" Value="200"/>
+                        <Setter Target="button62.Width" Value="200"/>
+                        <Setter Target="button63.Width" Value="200"/>
+                        <Setter Target="button71.Width" Value="200"/>
+                        <Setter Target="button81.Width" Value="200"/>
+                        <Setter Target="textBoxTableName.Width" Value="200"/>
+                        <Setter Target="button82.Width" Value="200"/>
+                        <Setter Target="button91.Width" Value="200"/>
+                        <Setter Target="button92.Width" Value="200"/>
+                        <Setter Target="button93.Width" Value="200"/>
+                        <Setter Target="textBoxQueryBeginsWith.Width" Value="320"/>                    
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="640" />
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBox Grid.Row="0" x:Name="textBox" Height="9" Margin="10,5,0,5" TextWrapping="NoWrap"  Text="sensors.3db" VerticalAlignment="Top" d:LayoutOverrides="LeftPosition, RightPosition"/>
+        <TextBlock Grid.Row="1" Text="Append a new record:" HorizontalAlignment="Left" VerticalAlignment="Center" />
+
+        <RelativePanel  Grid.Row="2">
+            <Button  x:Name="button21" Content="Temperature1 Insert" Height="38" Margin="5,5,0,5" VerticalAlignment="Top" Click="button_Click" Width="200" FontSize="13.333"/>
+            <Button RelativePanel.RightOf="button21"  x:Name="button22" Content="Temperature2 Insert" Height="38" Margin="10,5,0,5" VerticalAlignment="Top" Click="button_Click" Width="200" FontSize="13.333"/>
+            <Button RelativePanel.RightOf="button22" x:Name="button23" Content="Humidity1 Insert" Height="38" Margin="10,5,0,0" VerticalAlignment="Top" Width="200" Click="button_Click" HorizontalAlignment="Left" FontSize="13.333" />
+        </RelativePanel>
+
+        <TextBlock Grid.Row="3" Text="Update first record:" HorizontalAlignment="Left" VerticalAlignment="Center"  />
+
+        <RelativePanel Grid.Row="4">
+            <Button  x:Name="button41" Content="Temperature1 Update" Height="38" Margin="5,5,0,5" VerticalAlignment="Top" Click="button_Click" Width="200" FontSize="13.333"/>
+            <Button  RelativePanel.RightOf="button41" x:Name="button42" Content="Temperature2 Update" Height="38" Margin="10,5,0,5" VerticalAlignment="Top" Click="button_Click" Width="200" FontSize="13.333"/>
+            <Button  RelativePanel.RightOf="button42" x:Name="button43" Content="Humidity1 Update" Height="38" Margin="10,5,0,5" VerticalAlignment="Top" Width="200" Click="button_Click" HorizontalAlignment="Left" d:LayoutOverrides="HorizontalAlignment" FontSize="13.333" />
+        </RelativePanel>
+
+        <TextBlock Grid.Row="5" Text="Delete first record:" HorizontalAlignment="Left" VerticalAlignment="Center"  />
+
+        <RelativePanel Grid.Row="6">
+            <Button  x:Name="button61" Content="Temperature1 Delete" Height="38" Margin="5,5,0,5" VerticalAlignment="Top" Click="button_Click" Width="200" FontSize="13.333"/>
+            <Button  RelativePanel.RightOf="button61" x:Name="button62" Content="Temperature2 Delete" Height="38" Margin="10,5,0,5" VerticalAlignment="Top" Click="button_Click" RenderTransformOrigin="1.745,0.421" HorizontalAlignment="Left" Width="200" FontSize="13.333"/>
+            <Button RelativePanel.RightOf="button62"  x:Name="button63" Content="Humidity1 Delete" Height="38" Margin="10,5,0,5" VerticalAlignment="Top" Width="200" Click="button_Click" HorizontalAlignment="Left" d:LayoutOverrides="HorizontalAlignment" FontSize="13.333"/>
+        </RelativePanel>
+
+        <RelativePanel Grid.Row="7">
+            <Button  x:Name="button71" Content="Query Database" Height="38" Margin="5,5,0,5" VerticalAlignment="Top" Width="200" Click="button_Click" FontSize="13.333"/>
+            <TextBlock RelativePanel.RightOf="button71"  x:Name="textBoxQueryBeginsWithLabel" HorizontalAlignment="Left" Margin="10,5,0,5" TextWrapping="Wrap" Text="Begins with:"/>
+            <TextBox RelativePanel.RightOf="textBoxQueryBeginsWithLabel" x:Name="textBoxQueryBeginsWith" Margin="10,5,5,0"  TextWrapping="NoWrap" Text="Temperature" HorizontalAlignment="Left" Width="140"/>
+        </RelativePanel>
+
+        <RelativePanel Grid.Row="8">
+            <Button  x:Name="button81" Content="Add Table" Height="38" Margin="5,5,0,5" VerticalAlignment="Top" Width="200" Click="button_Click" FontSize="13.333"/>
+            <TextBox RelativePanel.RightOf="button81" x:Name="textBoxTableName" Margin="5,5,0,5"  TextWrapping="NoWrap" Text="Sensor" HorizontalAlignment="Left" Width="200" IsReadOnly="True"/>
+            <Button  RelativePanel.RightOf="textBoxTableName" x:Name="button82" Content="Drop Table" Height="38" Margin="10,5,0,5" VerticalAlignment="Top" Click="button_Click" HorizontalAlignment="Left" Width="200" FontSize="13.333"/>
+        </RelativePanel>
+
+        <RelativePanel Grid.Row="9">
+            <Button x:Name="button91" Content="New Database" Height="38" Margin="5,5,0,5" VerticalAlignment="Top" Width="200" Click="button_Click" FontSize="13.333"/>
+            <Button RelativePanel.RightOf="button91" x:Name="button92" Content="Open Database" Height="38" Margin="10,5,0,5" VerticalAlignment="Top" Width="200" Click="button_Click" Grid.RowSpan="2" FontSize="13.333"/>
+            <Button RelativePanel.RightOf="button92" x:Name="button93" Content="Drop Database" Height="38" Margin="10,5,0,5" VerticalAlignment="Top" Click="button_Click" HorizontalAlignment="Left" Width="200" FontSize="13.333"/>
+        </RelativePanel>
+
+
+
+
+    </Grid>
+</Page>
