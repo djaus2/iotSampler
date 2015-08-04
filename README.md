@@ -1,6 +1,7 @@
 # iotSampler
 Various Windows 10 IOT Sample applications including GPIO and Analog with RPI2, Windows Remote Arduino (Windows Phone and desktop as UI ti to Arduino) and SQLite as Universal App (Desktop phone and RPI2)
 See my blogs at http://embedded101.com/Blogs/David-Jones/
+This blog mirrors the one on Codeplex:  https://iotsampler.codeplex.com
 
 Sample Packs
 
