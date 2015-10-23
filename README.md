@@ -24,3 +24,7 @@ Window 8.1 Universal App: http://t.co/WsVkqzAeq1
 Runs on all Windows 10 platforms, desktop, phone AND IoT 
 Visual State Manager for phone context. 
 Tutorial on Embedded101: http://embedded101.com/Blogs/David-Jones
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/djaus2/iotsampler/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
