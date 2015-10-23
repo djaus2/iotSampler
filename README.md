@@ -26,5 +26,5 @@ Visual State Manager for phone context.
 Tutorial on Embedded101: http://embedded101.com/Blogs/David-Jones
 
 
-![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/djaus2/iotsampler/trend.png)](https://bitdeli.com/free "Bitdeli Badge")  
-
+ ![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/djaus2/iotsampler/trend.png)](https://bitdeli.com/free "Bitdeli Badge")  
+  
